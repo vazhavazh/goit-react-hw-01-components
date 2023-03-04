@@ -1,5 +1,5 @@
 import {Card} from "./ProfileStyled"
-// import PropTypes from "prop-types"
+import PropTypes from "prop-types"
 import { ContainerDetailsStyled } from "./ContainerDetails/ContainerDetailsStyled"
 import { StatsListStyled } from "./StatsList/StatsListStyled"
 import { StatItemStyled } from "./StatsList/StatItem/StatItemStyled"
@@ -51,13 +51,13 @@ width="450"
     )
 }
 
-// Profile.propTypes = {
-//     userName: PropTypes.string,
-//     tag: PropTypes.string,
-//     location: PropTypes.string,
-//     avatar: PropTypes.string,
-//     followers: PropTypes.number,
-//     views: PropTypes.number,
-//     likes: PropTypes.number,
+Profile.propTypes = {
+    userName: PropTypes.string,
+    tag: PropTypes.string,
+    location: PropTypes.string,
+    avatar: PropTypes.string,
+    followers: PropTypes.number,
+    views: PropTypes.number,
+    likes: PropTypes.number,
 
-// }
+}

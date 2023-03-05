@@ -52,12 +52,11 @@ width="450"
 }
 
 Profile.propTypes = {
-    userName: PropTypes.string,
-    tag: PropTypes.string,
-    location: PropTypes.string,
-    avatar: PropTypes.string,
+    userName: PropTypes.string.isRequired,
+    tag: PropTypes.string.isRequired,
+    location: PropTypes.string.isRequired,
+    avatar: PropTypes.string.isRequired,
     followers: PropTypes.number,
     views: PropTypes.number,
     likes: PropTypes.number,
-
 }

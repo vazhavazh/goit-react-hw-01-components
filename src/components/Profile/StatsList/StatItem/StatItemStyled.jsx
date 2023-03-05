@@ -5,4 +5,6 @@ export const StatItemStyled = styled.li`
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
+   min-width: 25%;
+       border-radius: 10px;
 `

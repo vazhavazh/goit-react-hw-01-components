@@ -9,19 +9,8 @@ export const Container = styled.div`
   display: flex;
   justify-content: center;
   background-color: #bebbbb;
+  flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
 `
-  /* @media screen and (min-width: 480px) {
-  .container {
-    max-width: 480px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .container {
-    max-width: 768px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .container {
-    max-width: 1200px;
-  }
-} */

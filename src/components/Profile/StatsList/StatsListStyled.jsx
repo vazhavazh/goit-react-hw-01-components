@@ -9,4 +9,5 @@ export const StatsListStyled = styled.ul`
     flex-wrap: wrap;
     justify-content: space-between;
     align-content: center;
+
 `

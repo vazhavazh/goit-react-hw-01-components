@@ -7,6 +7,8 @@ export const StaticSection = styled.section`
   flex-direction: column;
     flex-wrap: wrap;
     width: 400px;
+    border-radius: 10px;
+    margin-bottom: 20px;
 `
 
 export const Title = styled.h2`
@@ -33,6 +35,8 @@ export const Item = styled.li`
     flex-direction: column;
     align-items: center;
     width: 20%;
+    border-top-left-radius: 10px ;
+    border-top-right-radius: 10px ;
     background-color: ${props => props.color};
     
 `

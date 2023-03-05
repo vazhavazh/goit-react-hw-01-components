@@ -1,8 +1,17 @@
+import PropTypes from "prop-types"
+
 import {
     StaticSection,
     Title,
-    StatisticList
+    StatisticList,
+    Item,
+    Label,
+    PercentageValue
 } from "./StatisticsStyled"
+
+import { getRandomHexColor } from "./randomColor"
+
+
 
 
 export const Statistics = ({
@@ -14,24 +23,23 @@ export const Statistics = ({
 
         <StatisticList>
             {stats.map(stat => (
-                 <li className="item">
-      <span className="label">.docx</span>
-      <span className="percentage">4%</span>
-    </li>
+                 <Item key={stat.id} color={getRandomHexColor()}>
+                    <Label>{stat.label}</Label>
+      <PercentageValue>{stat.percentage}%</PercentageValue>
+    </Item>
             ))}
    
-    {/* <li className="item">
-      <span className="label">.mp3</span>
-      <span className="percentage">14%</span>
-    </li>
-    <li className="item">
-      <span className="label">.pdf</span>
-      <span className="percentage">41%</span>
-    </li>
-    <li className="item">
-      <span className="label">.mp4</span>
-      <span className="percentage">12%</span>
-    </li> */}
   </StatisticList>
 </StaticSection>
+}
+
+Statistics.propTypes = {
+    title: PropTypes.string,
+    stats: PropTypes.arrayOf(
+        PropTypes.exact({
+            id: PropTypes.string.isRequired,
+            label: PropTypes.string.isRequired,
+            percentage: PropTypes.number.isRequired
+        })
+    )
 }

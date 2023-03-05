@@ -35,13 +35,13 @@ ol {
   padding-left: 0;
 }
 
-.frame1 {
+/* .frame1 {
 position: relative;
   height: 85px;
   overflow: hidden;
-}
+} */
 
-.frame2 {
+/* .frame2 {
 
 position: absolute;
 width: 85px;
@@ -53,7 +53,7 @@ border-radius: 44px;
   left: 50%;
   transform: translate(-50%, -50%);
   
-}
+} */
 
 /* .statistics {
   padding-top: 30px;
@@ -80,7 +80,7 @@ color: #202025;
 
     list-style: none;
 } */
-.item {
+/* .item {
   display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -88,18 +88,18 @@ color: #202025;
     width: 20%;
     background-color: aqua;
     
-}
-.label {
+} */
+/* .label {
 
 font-size: 25px;
 line-height: 2.25;
 text-align: center;
 color: white;
-}
-.percentage {
+} */
+/* .percentage {
 
 font-size: 28px;
 line-height: 1.19;
 text-align: center;
 color: white;
-}
+} */

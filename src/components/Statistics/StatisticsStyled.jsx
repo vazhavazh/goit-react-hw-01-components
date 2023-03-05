@@ -26,3 +26,27 @@ export const StatisticList = styled.ul`
 
     list-style: none;
 `
+
+export const Item = styled.li`
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    width: 20%;
+    background-color: ${props => props.color};
+    
+`
+
+export const Label = styled.span`
+  font-size: 25px;
+line-height: 2.25;
+text-align: center;
+color: white;
+`
+
+export const PercentageValue = styled.span`
+  font-size: 28px;
+line-height: 1.19;
+text-align: center;
+color: white;
+`

@@ -6,7 +6,7 @@ import { StatItemStyled } from "./StatsList/StatItem/StatItemStyled"
 import {UserNameStyled} from "./ContainerDetails/UserName/UserNameStyled"
 import {UserMainTextStyled} from "./UserMainText/UserMainTextStyled"
 import {StatValueStyled} from "./StatsList/StatItem/StatValue/StatValueStyled"
-
+import {Frame1, Frame2} from "./FramesForImage"
 
 export const Profile = ({
     userName,
@@ -19,16 +19,16 @@ export const Profile = ({
     return (
         <Card>
   <ContainerDetailsStyled>
-<div className="frame1">
-<div className="frame2">
+<Frame1>
+<Frame2>
 <img
  src={avatar}
 alt="User avatar"
  className="avatar"
 width="450"
     />
-</div>
-</div>
+</Frame2>
+</Frame1>
     <UserNameStyled>{userName}</UserNameStyled>
     <UserMainTextStyled>@{tag}</UserMainTextStyled>
     <UserMainTextStyled>{location}</UserMainTextStyled>

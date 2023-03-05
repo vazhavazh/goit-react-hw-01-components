@@ -4,10 +4,7 @@ import { FriendListElem } from "./FriendListItem/FriendListItem"
 import { FriendListStyled } from "./FriendListStyled"
 
 
-export const FriendList = (
-    { friends
-    }) => {
-    
+export const FriendList = ({ friends}) => {    
     return <FriendListStyled>
         {friends.map(friend => (
             <FriendListElem friend={friend} key={friend.id} />

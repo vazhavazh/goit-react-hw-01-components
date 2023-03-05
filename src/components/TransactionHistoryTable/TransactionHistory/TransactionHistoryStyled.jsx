@@ -7,7 +7,7 @@ export const TransactionHistory = styled.tr`
 `
 export const Td = styled.td`
       padding: 12px;
-  text-align: left;
+  text-align: center;
 border-bottom: 1px solid #ddd;
 box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 
    0px 1px 1px 

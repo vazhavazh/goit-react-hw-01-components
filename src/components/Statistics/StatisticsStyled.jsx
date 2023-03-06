@@ -1,54 +1,56 @@
-import styled from '@emotion/styled';
+import styled from "@emotion/styled"
 
 export const StaticSection = styled.section`
-  padding-top: 30px;
+     padding-top: 30px;
   display: flex;
   background-color: #fff;
   flex-direction: column;
-  flex-wrap: wrap;
-  width: 400px;
-  border-radius: 10px;
-  margin-bottom: 20px;
-`;
+    flex-wrap: wrap;
+    width: 400px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+`
 
 export const Title = styled.h2`
-  margin-bottom: 30px;
-  font-size: 30px;
-  line-height: 1.19;
-  text-align: center;
-  color: #202025;
-`;
+    margin-bottom: 30px;
+font-size: 30px;
+line-height: 1.19;
+text-align: center;
+color: #202025;
+`
+
 
 export const StatisticList = styled.ul`
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
 
-  list-style: none;
-`;
+    list-style: none;
+`
 
 export const Item = styled.li`
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  align-items: center;
-  width: 20%;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  background-color: ${props => props.color};
-`;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    width: 20%;
+    border-top-left-radius: 10px ;
+    border-top-right-radius: 10px ;
+    background-color: ${props => props.color};
+    
+`
 
 export const Label = styled.span`
   font-size: 25px;
-  line-height: 2.25;
-  text-align: center;
-  color: white;
-`;
+line-height: 2.25;
+text-align: center;
+color: white;
+`
 
 export const PercentageValue = styled.span`
   font-size: 28px;
-  line-height: 1.19;
-  text-align: center;
-  color: white;
-`;
+line-height: 1.19;
+text-align: center;
+color: white;
+`

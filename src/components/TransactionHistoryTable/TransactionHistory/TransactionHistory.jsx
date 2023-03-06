@@ -1,23 +1,22 @@
-import PropTypes from "prop-types"
+import PropTypes from 'prop-types';
 
-import {
-    TransactionHistory,
-    Td
-} from "./TransactionHistoryStyled"
+import { TransactionHistoryElem, Td } from './TransactionHistoryStyled';
 
+// TransactionHistory
+export const TransactionHistory = ({ transaction }) => {
+  return (
+    <TransactionHistoryElem>
+      <Td>{transaction.type}</Td>
+      <Td>{transaction.amount}</Td>
+      <Td>{transaction.currency}</Td>
+    </TransactionHistoryElem>
+  );
+};
 
-export const TransactionHistoryElem = ({ transaction }) => {
-    return (
-        <TransactionHistory>
-            <Td>{transaction.type}</Td>
-            <Td>{transaction.amount}</Td>
-            <Td>{transaction.currency}</Td>
-        </TransactionHistory>
-    )
-}
-
-TransactionHistoryElem.propTypes = {
-    type: PropTypes.string,
-amount: PropTypes.string,
-currency: PropTypes.string
-}
+TransactionHistory.propTypes = {
+  transaction: PropTypes.shape({
+    type: PropTypes.string.isRequired,
+    amount: PropTypes.string.isRequired,
+    currency: PropTypes.string.isRequired,
+  }),
+};
